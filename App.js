@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom/client";
+import Accordion from "./src/components/Accordion";
+import { useState } from "react";
 
 
 
@@ -19,8 +21,36 @@ const HeadingComponent = () => (
 );
 
 /* Title component can be called as a normal (line no : 17)js function instead as a component in the curly brace, 
-because at the end og the day react Functional component is a javascript function and any javascript code 
+because at the end of the day react Functional component is a javascript function and any javascript code 
 can be written inside curly braces in JSX */
 
+
+
+
+const App = ()=>{
+  const [data, setData] = useState([
+    {id:1,
+      heading: "heading1",
+      desc: " description1",
+      checked : false
+    },
+    {id:1,
+      heading: "heading2",
+      desc: " description2",
+      checked : false
+    },
+    {id:1,
+      heading: "heading3",
+      desc: " description3",
+      checked : false
+    }
+  ])
+
+ 
+
+  return(
+    <Accordion data={data} setData= {setData} />
+  )
+}
 const root = ReactDom.createRoot(document.getElementById("root"));
-root.render(<HeadingComponent />);
+root.render(<App />);
