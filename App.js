@@ -2,6 +2,7 @@ import React from "react";
 import ReactDom from "react-dom/client";
 import Accordion from "./src/components/Accordion";
 import { useState } from "react";
+import ReactToaster from "./src/components/ReactToaster";
 
 
 
@@ -49,7 +50,8 @@ const App = ()=>{
  
 
   return(
-    <Accordion data={data} setData= {setData} />
+    // <Accordion data={data} setData= {setData} />
+    <ReactToaster />
   )
 }
 const root = ReactDom.createRoot(document.getElementById("root"));
