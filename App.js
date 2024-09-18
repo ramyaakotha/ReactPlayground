@@ -3,6 +3,8 @@ import ReactDom from "react-dom/client";
 import Accordion from "./src/components/Accordion";
 import { useState } from "react";
 import ReactToaster from "./src/components/ReactToaster";
+import LocalstorageWithExpiry from "./src/components/LocalstorageWithExpiry";
+import FindMax from "./src/components/findMax";
 
 
 
@@ -51,7 +53,9 @@ const App = ()=>{
 
   return(
     // <Accordion data={data} setData= {setData} />
-    <ReactToaster />
+    // <ReactToaster />
+    // <LocalstorageWithExpiry />
+    <FindMax />
   )
 }
 const root = ReactDom.createRoot(document.getElementById("root"));
