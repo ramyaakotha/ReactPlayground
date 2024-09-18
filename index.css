@@ -1,3 +1,28 @@
 #heading{
     color: red;
 }
+
+.star-rating {
+    display: flex;
+    flex-direction: row; /* To make the stars align right to left */
+}
+
+.star-rating button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+}
+
+.star-rating .on .star {
+    color: #ffc700;
+}
+
+.star-rating .off .star {
+    color: #ccc;
+}
+
+.star-rating .star {
+    font-size: 2rem;
+}
