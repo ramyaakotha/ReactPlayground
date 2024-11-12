@@ -26,3 +26,79 @@
 .star-rating .star {
     font-size: 2rem;
 }
+
+
+.Timer-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Time{
+    font-size: medium;
+    font-weight: 600;
+    color: black;
+    background-color: #ccc;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 20%;
+}
+
+
+.start-btn{
+    color: black;
+    height:30px;
+    width:60px;
+    background-color: lightgreen;
+    border: 1px solid green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-btn:hover{
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+.reset-btn{
+    color: black;
+    height:30px;
+    width:60px;
+    background-color: lightcoral;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset-btn:hover{
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+.stop-btn{
+    color: black;
+    height:30px;
+    width:60px;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid darkkhaki;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.stop-btn:hover{
+    background-color: white;
+    border: 1px solid black;
+}
