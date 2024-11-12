@@ -14,7 +14,7 @@ const Accordion = ({ data, setData }) => {
 
   const handleCheckbox = (index) => {
     setData((prevData) => {
-      const newData = [...prevData]; // taking shallow copy of prevData, so that a refernce is created and react identifies the change has benn made
+      const newData = [...prevData]; // taking shallow copy of prevData, so that a refernce is created and react identifies the change has been made
       newData[index] = { ...newData[index], checked: !newData[index].checked }; // and also shallow copy of the particular object which changed
       return newData;
     });

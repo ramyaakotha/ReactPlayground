@@ -3,9 +3,10 @@ import ReactDom from "react-dom/client";
 import Accordion from "./src/components/Accordion";
 import { useState } from "react";
 import ReactToaster from "./src/components/ReactToaster";
-import LocalstorageWithExpiry from "./src/components/LocalstorageWithExpiry";
 import FindMax from "./src/components/findMax";
 import Rating from "./src/components/Rating";
+import CustomDropdown from "./src/components/CustomDropdown";
+import ReactTimer from "./src/components/ReactTimer";
 
 
 
@@ -57,7 +58,9 @@ const App = ()=>{
     // <ReactToaster />
     // <LocalstorageWithExpiry />
     // <FindMax />
-    <Rating />
+    // <Rating />
+    // <CustomDropdown />
+    <ReactTimer />
   )
 }
 const root = ReactDom.createRoot(document.getElementById("root"));
