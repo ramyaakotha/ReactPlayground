@@ -14,7 +14,7 @@ function add(n=0) {
           throw new Error("not a number")
         }
         total = total + newN
-        return this
+        return this //allows chaining
       },
       sum: function () {
         // console.log(total, "total")
