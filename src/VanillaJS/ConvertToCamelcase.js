@@ -1,3 +1,8 @@
+//implement a function called camelCaseKeys that takes an object as the input parameter and returns a new object with all its keys converted to camel case.
+
+
+
+
 function camelCaseKeys(collection) {
   "use strict";
   // write your code below
@@ -53,3 +58,22 @@ const res = camelCaseKeys(
     {total23questions: 200}
   );
 console.log(res, "FinalResult");
+
+
+/* camelCaseKeys Tests
+Test Case 1: camelCaseKeys({ total_questions: 200, total_users: 10000 })
+Expected Output: A new object with camel-cased keys
+Test Case 2: Nested object passed to camelCaseKeys function
+Expected Output: A new object with camel-cased keys
+Test Case 3: An array of objects passed to camelCaseKeys function
+Expected Output: A new array of objects with camel-cased keys
+Test Case 4: Invalid input (empty object/array, null, undefined, primitive types) passed to camelCaseKeys function
+Expected Output: Return the input as it is
+Test Case 5: camelCaseKeys({ "total-questions": 200 })
+Expected Output: A new object with camel-cased keys
+Test Case 6: camelCaseKeys({ "total questions": 200 })
+Expected Output: A new object with camel-cased keys
+Test Case 7: camelCaseKeys({ "total2+questions": 200 })
+Expected Output: A new object with camel-cased keys
+Test Case 8: camelCaseKeys({ "total23questions": 200 })
+Expected Output: A new object with camel-cased keys*/
